@@ -1,0 +1,14 @@
+
+public class DayTwo {
+    public static void main (String args[]){
+        int a=90, b=40;
+        int add = a+b;
+        int sub = a-b;
+        int mult = a*b;
+        float div = (float) a/b;
+       System.out.println("Addition of a and b is: " + add);
+       System.out.println("Subtraction of a and b is: " + sub);
+       System.out.println("Mutliplication of a and b is: " + mult);
+       System.out.println("Division of a and b is: " + div);
+}
+}
