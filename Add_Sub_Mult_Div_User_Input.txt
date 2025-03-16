@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class MathOperation {
+    public static void main (String args[]){
+    Scanner sc=new Scanner(System.in);
+
+    System.out.println("Enter first digit: ");
+    int a =sc.nextInt();
+    System.out.println("Enter second digit: ");
+    int b =sc.nextInt();
+    int add = a+b;
+    int sub = a-b;
+    int mult = a*b;
+    float div = (float) a/b;
+
+    System.out.println("Addition is: " +add);
+    System.out.println("Subtraction is: " +sub);
+    System.out.println("Multiplication is: " +mult);
+    System.out.println("Division is: " +div);
+    sc.close();
+    }
+}
