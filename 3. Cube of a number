@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class CubeOfNumber {
+    public static void main (String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter a number to perform cube operation");
+        int a= sc.nextInt();
+        int cube = a*a*a;
+        System.out.println("The cube of the number is: " +cube);
+    sc.close();
+    }
+}
