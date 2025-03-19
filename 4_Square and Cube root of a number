@@ -1,0 +1,18 @@
+public class SquareCubeRoot {
+      static void squareRoot() {
+        double number = 64;
+        double squareRoot = Math.pow(number, 0.5);
+        System.out.println("Square root of " + number + " is " + squareRoot);
+    }
+    static void cubeRoot( ) {
+        double number = 216;
+        double cubeRoot = Math.cbrt(number);
+        System.out.println("cube root of " + number + " is " + cubeRoot);
+    }
+    public static void main(String[] args){
+     squareRoot();
+    cubeRoot();
+        
+    }
+   
+}
