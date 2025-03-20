@@ -1,0 +1,18 @@
+public class SwitchCase {
+    public static void main(String[] args) {
+        int item = 4;
+        switch(item){
+            case 1:
+            System.out.println("Price of Burger is 30");
+            break;
+            case 2:
+            System.out.println("Price of Pizza is 100");
+            break;
+            case 3:
+            System.out.println("Price of Coffe is 50");
+            break;
+            default:
+            System.out.println(" 50% off today");
+        }
+    }
+}
