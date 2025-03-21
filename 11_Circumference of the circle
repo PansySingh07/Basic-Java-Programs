@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class CircumferenceOfCircle {
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Enter Radius");
+        int n=sc.nextInt();
+        double cirm = 2*3.14*n;
+        System.out.println("Circumference of the circle is: " +cirm);
+        sc.close();
+    }
+}
