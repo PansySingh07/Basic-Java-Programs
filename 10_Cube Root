@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class CubeRoot {
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Enter the number");
+        int n=sc.nextInt();
+        double cubeRoot = Math.cbrt(n);
+        System.out.println("Cube Root of the Number is: " +cubeRoot);
+        sc.close();
+    }
+}
