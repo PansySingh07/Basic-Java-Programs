@@ -5,7 +5,7 @@ public class PerimeterOfSquare {
        System.out.println("Enter side of the Square");
         int s=sc.nextInt();
         int perimeter = 4*s;
-        System.out.println("Area of the Rectangle is: " +perimeter);
+        System.out.println("perimeter of the Rectangle is: " +perimeter);
         sc.close();
     }
 }
