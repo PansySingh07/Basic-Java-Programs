@@ -5,7 +5,7 @@ public class AreaOfSquare {
        System.out.println("Enter side of the Square");
         int s=sc.nextInt();
         int area = s*s;
-        System.out.println("Area of the Rectangle is: " +area);
+        System.out.println("Area of the Square is: " +area);
         sc.close();
     }
 }
