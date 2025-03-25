@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class PrintDigit {
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Enter the number");
+        int num=sc.nextInt();
+        int count =0;
+        int copy=num;
+       while(copy!=0){
+        count++;
+        copy = copy/10;
+       }
+       while(num!=0){
+        int pow = (int)Math.pow(10, count-1);
+        System.out.println(num/pow);
+        num=num%pow;
+        count--;
+       }
+       
+      sc.close();
+    }
+}
