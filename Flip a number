@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class FlipNumber {
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Enter the number");
+        int num=sc.nextInt();
+        sc.close();
+        int pos=0;
+        int sum=0;
+        while(num!=0){
+          int singleDigit =num%10;
+          pos ++;
+          int pow = (int)Math.pow(10, singleDigit-1);
+          sum=sum+pos*pow;
+          num=num/10;
+        }
+        System.out.println(sum);
+      }
+    }
