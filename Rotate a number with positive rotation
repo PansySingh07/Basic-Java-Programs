@@ -4,8 +4,9 @@ public class RotateNumber {
        Scanner sc=new Scanner(System.in);
        System.out.println("Enter the number");
         int num=sc.nextInt();
+       System.out.println("Enter the no. of rotation);
+        int rotation = sc.nextInt();
         sc.close();
-        int rotation =3;
         int count =0;
         int pow = (int)Math.pow(10, rotation);
         int lhs = num/pow;
