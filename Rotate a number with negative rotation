@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class RotateNumber {
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Enter the number");
+        int num=sc.nextInt();
+        System.out.println("Enter negative rotation");
+        int rotation = sc.nextInt();
+        sc.close();
+        int count =0;
+        int cpy=num;
+        while( cpy!=0){
+          count++;
+          cpy=cpy/10;
+        }
+        rotation=rotation%count;
+        if (rotation<0){
+          rotation=rotation+count;
+        }
+        int pow = (int)Math.pow(10, rotation);
+        int lhs = num/pow;
+        int rhs = num%pow;
+        int pow2 = (int)Math.pow(10, count-rotation);
+        int result = rhs*pow2+lhs;
+                System.out.println(result);
+      }
+    }
