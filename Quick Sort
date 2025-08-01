@@ -1,0 +1,51 @@
+
+public class QuickSort {
+    static void quickSort(int [] nums, int low, int high){
+        if(low<high){
+          int pi = partition(nums, low, high); 
+          quickSort(nums, low, pi-1);
+          quickSort ( nums, pi+1, high);
+        }
+    }
+    
+    static int partition( int [] nums, int low, int high){
+      int pivot = nums[low];
+      int left = low+1;
+      int right = high;
+      
+      while(left<=right){
+          while(left<=right && nums[left]<= pivot){
+              left++;
+          }
+          while (right>= left && nums[right] > pivot){
+              right--;
+          }
+          
+          if(left<right){
+              int temp = nums[left];
+              nums[left] = nums[right];
+              nums[right] = temp;
+          }
+      }
+      int temp = nums[low];
+              nums[low] = nums[right];
+              nums[right] = temp;
+              
+              return right;
+      
+    }
+   public static void main (String args[] ){
+        int [] nums = {10, 50, 30, 20, 40, 70};
+        int n = nums.length;
+        quickSort(nums,   0, n-1);
+        for(int ele : nums){
+            System.out.print( ele + " ");
+        }
+    }
+}
+
+
+
+
+
+
